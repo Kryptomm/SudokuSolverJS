@@ -3,8 +3,6 @@ var boardFields;
 var possibleNumbers;
 var changes = [];
 
-console.log("lol")
-
 //Entfernt mögliche Nummern aufgrund der Reihen.
 function removeRowsFromPN(){
     for(let i = 0; i < 9; i++){
