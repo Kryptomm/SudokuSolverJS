@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title> TicTacToe </title>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"> </script>
+        <link rel="stylesheet" href="SudokuSolver.css">
+    </head>
+
+    <body>
+    <center>
+        <div class="test">
+            <div class="row">
+                <div class="SudokuBoard"></div>
+            </div>
+            <duv class="row">
+                <button type="button" id="solveButton">Löse mich</button>
+                <br>
+                    <input id="SudokuInput" ></input>
+                </br>
+                <br>
+                    <div>Mögliche Nummern nach folgenden Mustern aussortieren:</div>
+                </duv>
+                <br>
+                    <input type="checkbox" id="checkRows" onclick="checkBoxUpdate();"; checked></input>
+                    <label for="placeIfOnlyLeftSolution">Reihen überprüfen</label>
+                </br>
+                <br>
+                    <input type="checkbox" id="checkColums" onclick="checkBoxUpdate();" checked></input>
+                    <label for="placeIfOnlyLeftSolution">Spalten überprüfen</label>
+                </br>
+                <br>
+                    <input type="checkbox" id="checkBoxes" onclick="checkBoxUpdate();" checked></input>
+                    <label for="placeIfOnlyLeftSolution">Boxen überprüfen</label>
+                </br>
+                <div>Mögliche Nummern platzieren nach folgenden Mustern:</div>
+                <br>
+                    <input type="checkbox" id="placeLastSol" checked></input>
+                    <label for="placeIfOnlyLeftSolution">Letzte Mögliche Nummer</label>
+                </br>
+                <br>
+                    <input type="checkbox" id="placeLastSolInRow" checked></input>
+                    <label for="placeIfOnlyLeftSolution">Letzte Mögliche Nummer in Reihe</label>
+                </br>
+                <br>
+                    <input type="checkbox" id="placeLastSolInColumn" checked></input>
+                    <label for="placeIfOnlyLeftSolution">Letzte Mögliche Nummer in Spalte</label>
+                </br>
+                <br>
+                    <input type="checkbox" id="placeLastSolInBox" checked></input>
+                    <label for="placeIfOnlyLeftSolution">Letzte Mögliche Nummer in Box</label>
+                </br>
+                <div>Noch mögliche Lösungen die überprüft werden müssen:</div>
+                <div id="possibleOutcomesText">0</div>
+            </div>
+        </div>
+    </center>
+    </body>
+
+    <script src="SudokuSolver.js"></script>
+
+</html>

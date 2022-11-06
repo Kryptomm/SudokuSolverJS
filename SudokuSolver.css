@@ -1,0 +1,57 @@
+[class^="Board_Box_"]{
+    border: 5px solid rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+[id^="Sudoku_Field_"] {
+    display: grid;
+    grid-gap: 50px 50px;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px 20px;
+    font-size: 2rem;
+    display: flex;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+    font-weight: bold;
+    border: 3px solid rgb(255, 145, 0);
+    border-radius: 0%;
+    background: rgb(241, 255, 163);
+    caret-color: transparent;
+}
+
+.SudokuBoard {
+    display: grid;
+    width: 600px;
+    height: 600px;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.solveButton {
+    font-family: "Roboto", sans-serif;
+    background: #d0ff00;
+    color: #000000;
+    width: 10%;
+    height: 10%;
+}
+
+.row {
+    float: left;
+    width: 50%;
+}
+
+.test:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    background-image: radial-gradient(circle, rgb(255, 255, 255), rgb(214, 157, 0));
+    height: auto;
+    background-attachment: fixed;
+    background-size: cover;
+}
